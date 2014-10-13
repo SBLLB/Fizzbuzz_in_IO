@@ -6,6 +6,7 @@ Fizzbuzz divide3 := method(number, if(number%3 == 0))
 
 Fizzbuzz divide5 := method(number, if(number%5 == 0))
 
+Fizzbuzz divide15 := method(number, if(number%15 == 0))
 
 
 
@@ -18,3 +19,7 @@ assert(Fizzbuzz divide3(2), false)
 assert(Fizzbuzz divide5(5), true) 
 
 assert(Fizzbuzz divide5(2), false) 
+
+assert(Fizzbuzz divide15(15), true) 
+
+assert(Fizzbuzz divide15(2), false) 
