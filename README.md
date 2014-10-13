@@ -3,7 +3,7 @@ FizzBuzz
 The Counting Game
 ------------------
 
-This method was written using Io following a mornings introduction to the prototype-based programming language. 
+This method was written in Io following a mornings introduction to the prototype-based programming language. This was during week 4 at Makers Academy.ß
 
 ### How it works
 
