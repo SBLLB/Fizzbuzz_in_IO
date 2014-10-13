@@ -20,26 +20,49 @@ Fizzbuzz play := method(number,
 Fizzbuzz game := method(for(i, 1, 100, 1, (play(i) println)))
 
 
-assert := method(actual, expected, if(actual == expected, "PASS" println, "FAIL" println))
+expect := method(actual, expected, if(actual == expected, "PASS" println, "FAIL" println))
 
-assert(Fizzbuzz divide3(3), true) 
+it := method(description, expectation,
+	description println,
+	expectation println
+)
 
-assert(Fizzbuzz divide3(2), false) 
+it("should be divisible by three", 
+	expect(Fizzbuzz divide3(3), true) 
+	)
 
-assert(Fizzbuzz divide5(5), true) 
+it("should not be divisible by three", 
+	expect(Fizzbuzz divide3(2), false) 
+	)
 
-assert(Fizzbuzz divide5(2), false) 
+it("should  be divisible by five", 
+	expect(Fizzbuzz divide5(5), true) 
+	)
 
-assert(Fizzbuzz divide15(15), true) 
+it("should not be divisible by five", 
+	expect(Fizzbuzz divide5(2), false) 
+	)
 
-assert(Fizzbuzz divide15(2), false) 
+it("should  be divisible by fifteen", 
+	expect(Fizzbuzz divide15(15), true) 
+	)
 
-assert(Fizzbuzz play(3), "Fizz") 
+it("should not be divisible by fifteen", 
+	expect(Fizzbuzz divide15(2), false) 
+	)
 
-assert(Fizzbuzz play(5), "Buzz") 
+it("should say Fizz when divisible by 3", 
+	expect(Fizzbuzz play(3), "Fizz") 
+	)
 
-assert(Fizzbuzz play(15), "Fizzbuzz") 
+it("should say Fizz when divisible by 5", 
+	expect(Fizzbuzz play(5), "Buzz") 
+	)
 
-assert(Fizzbuzz play(1), 1) 
+it("should say Fizz when divisible by 15", 
+	expect(Fizzbuzz play(15), "Fizzbuzz") 
+	)
 
-assert(Fizzbuzz play(8), 8) 
+it("should return a number when not divisible by 3, 5 or 15", 
+	expect(Fizzbuzz play(4), 4) 
+	)
