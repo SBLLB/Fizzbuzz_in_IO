@@ -1,16 +1,22 @@
-FizzBuzz
-========
-The Counting Game
-------------------
-
-This method was written in Io following a mornings introduction to the prototype-based programming language. This was during week 4 at Makers Academy.ß
-
-### How it works
+##Fizzbuzz in IO
 
 
-The program has been written to count from 1 to 100, replacing 
-* multiples of 3 with "Fizz"
-* multiples of 5 with "Buzz"
-* multiples of 15 with "FizzBuzz"
+#### The Fizzbuzz Kata written in IO. Testing written in IO also. Set as a challenge during week 5 at Maker's Academy but repeated whenever possible to improve my Javascript skills. 
 
-The testing has been written in Io also.
+
+###The Objective
+
+Write the counting game, Fizzbuzz. 
+
++ When counting:
+	+ Say "fizz" instead of multiples of three
+	+ Say "buzz" instead of multiples of five
+	+ Say "fizzbuzz" instead of multiples of both three and five (fifteen).
+
+
+### Technologies Used
+* IO
+* Commandline
+
+### To do 
+- [ ] Get completion time down
